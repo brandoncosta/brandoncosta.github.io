@@ -3,15 +3,341 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Your Name — Creative Designer & Visual Storyteller" />
-
-  <title>BC</title>
-
-<!-- <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" /> -->
-
+  <meta name="description" content="Brandon Costa — Designer at Temple Coffee Roasters, Sacramento" />
+  <title>Brandon Costa — Designer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-hi
+
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
+
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">BC.</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-badge">
+        <span class="nav-badge-dot"></span>
+        Available for freelance
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div>
+      <div class="hero-overline">
+        <span class="hero-overline-rule"></span>
+        Designer · Temple Coffee Roasters · Sacramento
+      </div>
+      <h1 class="hero-name">
+        <span class="line"><span class="line-inner">Brandon</span></span>
+        <span class="line"><span class="line-inner">Costa.</span></span>
+      </h1>
+    </div>
+    <div class="hero-bottom">
+      <p class="hero-intro">
+        I design the full brand world of <strong>Temple Coffee Roasters</strong> —
+        from the bag on the shelf to the site on the screen, the cup in your hand
+        to the sign above the door.
+      </p>
+      <div class="hero-location">
+        <div>Sacramento, CA</div>
+        <div>Temple Coffee Roasters</div>
+        <div>9 Cafés &amp; Growing</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack">
+      <div class="ticker-item">
+        Web Development <span class="sep">◆</span>
+        Merch &amp; Apparel <span class="sep">◆</span>
+        Packaging Design <span class="sep">◆</span>
+        Signage &amp; Environmental <span class="sep">◆</span>
+        Drinkware &amp; Accessories <span class="sep">◆</span>
+        Brand Identity <span class="sep">◆</span>
+        Print &amp; Collateral <span class="sep">◆</span>
+        Social &amp; Digital <span class="sep">◆</span>
+      </div>
+      <div class="ticker-item" aria-hidden="true">
+        Web Development <span class="sep">◆</span>
+        Merch &amp; Apparel <span class="sep">◆</span>
+        Packaging Design <span class="sep">◆</span>
+        Signage &amp; Environmental <span class="sep">◆</span>
+        Drinkware &amp; Accessories <span class="sep">◆</span>
+        Brand Identity <span class="sep">◆</span>
+        Print &amp; Collateral <span class="sep">◆</span>
+        Social &amp; Digital <span class="sep">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="work" class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">01 / Work</span>
+      <h2 class="section-title">Selected Projects</h2>
+    </div>
+
+    <div class="filter-bar reveal rd1">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="merch">Merch &amp; Apparel</button>
+      <button class="filter-btn" data-filter="packaging">Packaging</button>
+      <button class="filter-btn" data-filter="signage">Signage</button>
+      <button class="filter-btn" data-filter="drinkware">Drinkware</button>
+      <button class="filter-btn" data-filter="print">Print</button>
+    </div>
+
+    <div class="warp-grid reveal rd2">
+
+      <div class="warp-cell" data-cat="web">
+        <div class="cell-bg cb1"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Web Development</div>
+          <div class="cell-name">Temple Coffee Website</div>
+          <div class="cell-desc">Full site redesign — menu system, café locations, online ordering, and brand story.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Temple Coffee Website"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="packaging">
+        <div class="cell-bg cb2"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Packaging Design</div>
+          <div class="cell-name">Single Origin Series</div>
+          <div class="cell-desc">Rotating lineup of single origin bags — illustrated origin maps, distinct per region.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Single Origin Series"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="merch">
+        <div class="cell-bg cb3"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Merch &amp; Apparel</div>
+          <div class="cell-name">Seasonal Tee Drop</div>
+          <div class="cell-desc">Fall/winter apparel — 3 colorways, screenprinted, sold across all Temple locations and online.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Seasonal Tee Drop"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="signage">
+        <div class="cell-bg cb4"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Signage &amp; Environmental</div>
+          <div class="cell-name">Café Interior System</div>
+          <div class="cell-desc">Menu boards, wall graphics, and wayfinding — consistent across Sacramento, Davis, and Folsom.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Café Interior System"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="drinkware">
+        <div class="cell-bg cb5"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Drinkware &amp; Accessories</div>
+          <div class="cell-name">Ceramic Mug Collection</div>
+          <div class="cell-desc">Branded mug system — 3 sizes, seasonal glazes, embossed Temple wordmark.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Ceramic Mug Collection"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="print">
+        <div class="cell-bg cb6"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Print &amp; Collateral</div>
+          <div class="cell-name">Wholesale Lookbook</div>
+          <div class="cell-desc">24-page catalogue for wholesale buyers — photography direction, layout, and copy.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Wholesale Lookbook"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="web">
+        <div class="cell-bg cb7"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Web Development</div>
+          <div class="cell-name">Subscription Portal</div>
+          <div class="cell-desc">Custom subscription UI — roast profiles, frequency selector, account dashboard.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Subscription Portal"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="merch">
+        <div class="cell-bg cb8"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Merch &amp; Apparel</div>
+          <div class="cell-name">Barista Uniform System</div>
+          <div class="cell-desc">Staff aprons, hats, and shirts across all Temple locations — functional and on-brand.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Barista Uniform System"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="packaging">
+        <div class="cell-bg cb9"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Packaging Design</div>
+          <div class="cell-name">Holiday Gift Tin</div>
+          <div class="cell-desc">Seasonal gifting line — rigid gift boxes, tin canister, and custom tissue system.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Holiday Gift Tin"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="signage">
+        <div class="cell-bg cb10"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Signage &amp; Environmental</div>
+          <div class="cell-name">Pop-Up Market Booth</div>
+          <div class="cell-desc">Portable brand environment for Sacramento farmers markets and events.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Pop-Up Market Booth"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="drinkware">
+        <div class="cell-bg cb11"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Drinkware &amp; Accessories</div>
+          <div class="cell-name">Travel Tumbler</div>
+          <div class="cell-desc">Co-developed 16oz insulated tumbler — form, finish, and Temple brand application.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Travel Tumbler"></a>
+      </div>
+
+      <div class="warp-cell" data-cat="print">
+        <div class="cell-bg cb12"></div>
+        <div class="cell-overlay">
+          <div class="cell-cat">Print &amp; Collateral</div>
+          <div class="cell-name">Tasting Notes Cards</div>
+          <div class="cell-desc">Perforated card inserts in every bag — origin story, flavor notes, and brew guide.</div>
+        </div>
+        <a href="#" class="cell-link" aria-label="Tasting Notes Cards"></a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">02 / About</span>
+      <h2 class="section-title">The Designer</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-portrait reveal rd1">
+        <div class="about-portrait-fill">
+          <div class="about-portrait-initials">BC</div>
+        </div>
+        <div class="about-frame"></div>
+      </div>
+
+      <div class="about-text">
+        <h2 class="reveal rd1">
+          I Make Temple<br>
+          <em>Look as Good</em><br>
+          As It Tastes.
+        </h2>
+        <p class="reveal rd2">
+          I'm <strong>Brandon Costa</strong>, a designer at
+          <strong>Temple Coffee Roasters</strong> — Sacramento's specialty coffee roaster
+          with 9 cafés spread across the region, from Sacramento to Davis and Folsom.
+        </p>
+        <p class="reveal rd3">
+          I work across the full brand: the <strong>packaging</strong> that earns shelf presence,
+          the <strong>apparel and merch</strong> people actually want to wear, the
+          <strong>signage systems</strong> that hold up across every location, the
+          <strong>drinkware</strong> built to last, and the <strong>web presence</strong>
+          that reflects the care we put into every roast.
+        </p>
+        <p class="reveal rd4">
+          Working in-house at a growing brand means covering a lot of ground —
+          and I've embraced every part of it.
+        </p>
+        <div class="about-disciplines reveal rd5">
+          <span class="disc-tag">Web Development</span>
+          <span class="disc-tag">Packaging</span>
+          <span class="disc-tag">Merch &amp; Apparel</span>
+          <span class="disc-tag">Signage &amp; Environmental</span>
+          <span class="disc-tag">Drinkware &amp; Accessories</span>
+          <span class="disc-tag">Brand Identity</span>
+          <span class="disc-tag">Print &amp; Collateral</span>
+          <span class="disc-tag">Art Direction</span>
+          <span class="disc-tag">Social &amp; Digital</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">03 / Contact</span>
+      <h2 class="section-title">Get in Touch</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2 class="reveal rd1">
+          Let's Talk<br>About Your<br>Next Project.
+        </h2>
+        <p class="reveal rd2">
+          Open to freelance work, consulting, and good conversations
+          about design, coffee, or both.
+        </p>
+        <div class="contact-links reveal rd3">
+          <a href="mailto:brandon@costa.design" class="c-link">
+            <span class="c-link-label">Email</span>
+            <span class="c-link-val">brandon@costa.design</span>
+            <span class="c-link-arrow">↗</span>
+          </a>
+          <a href="https://linkedin.com/in/brandoncosta" class="c-link" target="_blank" rel="noopener noreferrer">
+            <span class="c-link-label">LinkedIn</span>
+            <span class="c-link-val">brandoncosta</span>
+            <span class="c-link-arrow">↗</span>
+          </a>
+          <a href="https://dribbble.com/brandoncosta" class="c-link" target="_blank" rel="noopener noreferrer">
+            <span class="c-link-label">Dribbble</span>
+            <span class="c-link-val">brandoncosta</span>
+            <span class="c-link-arrow">↗</span>
+          </a>
+          <a href="https://instagram.com/brandoncosta" class="c-link" target="_blank" rel="noopener noreferrer">
+            <span class="c-link-label">Instagram</span>
+            <span class="c-link-val">@brandoncosta</span>
+            <span class="c-link-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal rd2" id="contactForm" action="#">
+        <div class="f-group">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your name" autocomplete="name" required />
+        </div>
+        <div class="f-group">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" name="email" placeholder="you@example.com" autocomplete="email" required />
+        </div>
+        <div class="f-group">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" name="subject" placeholder="What's this about?" />
+        </div>
+        <div class="f-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+        </div>
+        <button type="submit" class="btn-send">
+          <span>Send Message</span>
+          <span>→</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Brandon Costa <span class="f-dot">◆</span> All rights reserved</p>
+    <p>Temple Coffee Roasters <span class="f-dot">◆</span> Sacramento, CA</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
