@@ -76,10 +76,13 @@ document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 
 const warpGrid  = document.querySelector('.warp-grid');
 const COLS      = 4;
-const ROWS      = 3;
+const ROWS      = 4;
 const FRICTION  = 0.13;
 const RADIUS    = 1.8;   // influence in cell-widths
 const MAX_BOOST = 1.6;   // how much the closest track grows (multiplier on base)
+
+const MOBILE_BP = 960;
+const isMobile  = () => window.innerWidth <= MOBILE_BP;
 
 let colWeights = Array(COLS).fill(1);
 let rowWeights = Array(ROWS).fill(1);
@@ -160,11 +163,13 @@ function startWarp() {
 }
 
 warpGrid.addEventListener('mouseenter', () => {
+  if (isMobile()) return;
   warpActive = true;
   startWarp();
 });
 
 warpGrid.addEventListener('mousemove', e => {
+  if (isMobile()) return;
   warpMX = e.clientX;
   warpMY = e.clientY;
   warpActive = true;
@@ -172,9 +177,19 @@ warpGrid.addEventListener('mousemove', e => {
 });
 
 warpGrid.addEventListener('mouseleave', () => {
+  if (isMobile()) return;
   warpActive = false;
   startWarp();
 });
+
+// Clear any JS-injected inline styles when resizing to mobile
+window.addEventListener('resize', () => {
+  if (isMobile()) {
+    warpGrid.style.gridTemplateColumns = '';
+    warpGrid.style.gridTemplateRows    = '';
+    warpActive = false;
+  }
+}, { passive: true });
 
 /* ─── FILTER BAR ───────────────────────────────── */
 const filterBtns = document.querySelectorAll('.filter-btn');
@@ -191,7 +206,12 @@ filterBtns.forEach(btn => {
     // Reset grid track sizes after filter changes the layout
     colWeights = Array(COLS).fill(1);
     rowWeights = Array(ROWS).fill(1);
-    applyTrackSizes();
+    if (!isMobile()) {
+      applyTrackSizes();
+    } else {
+      warpGrid.style.gridTemplateColumns = '';
+      warpGrid.style.gridTemplateRows    = '';
+    }
   });
 });
 
