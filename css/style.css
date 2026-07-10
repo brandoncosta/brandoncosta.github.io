@@ -197,7 +197,7 @@ h1, h2, h3, h4 {
 }
 
 .work-media {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   background: var(--bg-panel);
   border: 1px solid var(--line);
   overflow: hidden;
