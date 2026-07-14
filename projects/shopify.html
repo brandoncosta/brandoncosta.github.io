@@ -1,1 +1,142 @@
-<html><head><body>Hi</body></head></html>>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopify Website Development | Brandon Costa</title>
+<meta name="description" content="A full Shopify rebuild for Temple Coffee Roasters: custom sections, a modernized cart, dedicated café pages, product filtering, and an accessibility pass.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand">
+      Brandon Costa
+      <span class="brand-sub">Brand Designer</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      <a href="mailto:brandoncosta@gmail.com">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="cs-hero wrap">
+    <a href="../index.html#work" class="cs-back">← All work</a>
+    <p class="eyebrow eyebrow--accent">Temple Coffee Roasters · Web</p>
+    <h1>Shopify Website Development</h1>
+
+    <div class="cs-meta">
+      <div class="cs-meta-item">
+        <p class="eyebrow">Role</p>
+        <p>Sole designer and developer, full site rebuild</p>
+      </div>
+      <div class="cs-meta-item">
+        <p class="eyebrow">Platform</p>
+        <p>Shopify, custom theme built from scratch</p>
+      </div>
+      <div class="cs-meta-item">
+        <p class="eyebrow">Build</p>
+        <p>Custom-coded sections, Liquid, JavaScript, metafields</p>
+      </div>
+      <div class="cs-meta-item">
+        <p class="eyebrow">Collaboration</p>
+        <p>Built independently, start to finish</p>
+      </div>
+    </div>
+
+    <div class="cs-hero-media">
+      <span class="placeholder-tag">[ HERO IMAGE, HOMEPAGE SCREENSHOT ]</span>
+    </div>
+  </section>
+
+  <section class="cs-section wrap">
+    <div class="cs-section-grid">
+      <p class="eyebrow">Problem</p>
+      <div class="cs-copy">
+        <p>Temple's old site was carrying a lot of quiet friction. Every "Add to Cart" click redirected shoppers straight to the cart page, a limitation inherited from a third-party wholesale app that wasn't built for a modern AJAX cart. Information that customers actually wanted was either buried or missing entirely: "menu" was the single most searched term on the site according to Shopify's own analytics, yet there was no page answering it. Coffee classes existed only as social posts the week of, sometimes the day before. The wholesale page didn't make clear what a potential partner could expect, and its inquiry form kicked people off the site entirely to a bare Google Form. On individual coffee product pages, the story behind each coffee, where it came from, how it was processed, was buried in plain paragraph text with no visual hierarchy.</p>
+        <p>The goal was a full rebuild: fix the underlying technical constraints, answer the questions customers were already asking, and bring the site's presentation up to the same level as the packaging and brand system built around it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section wrap">
+    <div class="cs-section-grid">
+      <p class="eyebrow">The Cart Problem</p>
+      <div class="cs-copy">
+        <p>The biggest technical constraint was the cart. Temple's wholesale ordering ran through a third-party app that only worked with the old, full-page-redirect cart, so simply switching to a modern AJAX cart would have broken wholesale ordering entirely.</p>
+        <p>The fix was to split the experience by customer type. Wholesale accounts are tagged and continue to use the original cart, keeping their ordering flow intact. Every other customer now gets a modern slide-out cart that keeps them on the page, surfaces related products, and shows progress toward free shipping as items are added, all coded custom rather than pulled from an app. It's a small distinction technically, one tag, two cart behaviors, but it meant retail customers finally got a modern shopping experience without touching the wholesale infrastructure underneath it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section wrap">
+    <div class="cs-section-grid">
+      <p class="eyebrow">What Launched</p>
+      <div class="cs-copy">
+        <p>Beyond the cart, the rebuild introduced a full set of new tools and pages, each one answering a specific gap in the old site:</p>
+        <ul class="scope-list">
+          <li><span class="scope-label">Bulk Order Form</span> A custom-coded ordering tool for café managers and wholesale clients to order coffee and products faster</li>
+          <li><span class="scope-label">Café Pages</span> Dedicated pages for all nine Temple locations, each with directions, information, and that café's own menu</li>
+          <li><span class="scope-label">Coffee Classes</span> A dedicated page explaining what the classes are, where, and when, updated monthly, replacing social-only announcements</li>
+          <li><span class="scope-label">Wholesale Page</span> Rebuilt to clearly explain what partners can expect, with a custom inline inquiry form replacing the offsite Google Form</li>
+          <li><span class="scope-label">Filtering</span> Coffee filterable by origin, processing method, and grind size; tea filterable by type</li>
+          <li><span class="scope-label">Accessibility</span> A full alt text audit and pass across product and site imagery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section wrap">
+    <div class="cs-section-grid">
+      <p class="eyebrow">Coffee Page System</p>
+      <div class="cs-copy">
+        <p>Individual coffee product pages needed the biggest design shift. Previously, everything a customer might want to know, origin, processing, tasting notes, was a wall of plain text. The rebuild introduced a custom section built around a color-overlaid image, with the copy itself restructured around real visual hierarchy instead of a single paragraph.</p>
+        <p>Both the color and the image are pulled dynamically from a metafield tied to each coffee's origin, using the same region-to-color system already established across Temple's physical packaging (Africa, Central America, South America, Asia-Pacific, India, and so on). That means the website's product pages now reinforce the same visual language customers already recognize from the bag on their shelf, rather than existing as a disconnected system of their own.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section wrap" style="border-bottom: none;">
+    <div class="cs-section-grid">
+      <p class="eyebrow">Result</p>
+      <div class="cs-copy">
+        <p>The rebuild left Temple with a faster, more modern site that actually answers the questions customers were already asking: what's on the menu at each café, when the next coffee class is, what a wholesale partnership looks like. Product discovery is easier with real filtering, checkout is smoother for retail customers without disrupting wholesale, and the coffee pages now carry the same visual identity as Temple's packaging instead of feeling like a separate system. The result is a site that finally matches the level of care already built into the brand everywhere else.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cs-next">
+      <div>
+        <p class="eyebrow">Next project</p>
+        <h3>Merchandise &amp; Apparel System</h3>
+      </div>
+      <a href="merch-system.html" class="view-link">View case study →</a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="footer-note">© 2026 Brandon Costa</span>
+    <div class="footer-links">
+      <a href="../resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      <a href="mailto:brandoncosta@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/brandoncosta" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
