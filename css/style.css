@@ -425,6 +425,15 @@ h1, h2, h3, h4 {
   margin: 28px 0 10px;
 }
 
+.cs-media { overflow: hidden; }
+
+.cs-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .cs-media-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
